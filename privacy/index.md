@@ -1,3 +1,7 @@
+---
+title: Privacy policy
+---
+
 [← GigClick home](../)
 
 # GigClick Privacy Policy

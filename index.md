@@ -1,3 +1,7 @@
+---
+title: The drummer's metronome
+---
+
 <img src="icon.png" alt="GigClick icon" width="128" height="128">
 
 # GigClick
