@@ -1,44 +1,35 @@
-# GigClick Privacy Policy
+<img src="icon.png" alt="GigClick icon" width="128" height="128">
 
-**Effective date: 4 July 2026**
+# GigClick
 
-GigClick is a metronome app for drummers, developed and published by Matt
-(contact: dmbkiwi@gmail.com).
+**The drummer's metronome — for the practice room and the stage.**
 
-## The short version
+GigClick is a metronome built by a drummer, for drummers. Coming soon to
+Google Play (currently in closed testing).
 
-GigClick collects no data. Nothing you do in the app leaves your device.
+## Why another metronome?
 
-## Details
-
-- **No data collection.** GigClick does not collect, store, transmit, or share
-  any personal information, usage analytics, crash reports, or telemetry of any
-  kind.
-- **No accounts.** The app has no sign-up, login, or user accounts.
-- **No network access.** The app performs no network communication.
-- **No advertising.** The app contains no ads and no third-party advertising or
-  analytics SDKs.
-- **Local data only.** Your songs, setlists, and settings are stored solely on
-  your device. Uninstalling the app deletes them.
-- **Backups and exports.** Backup files (your song/setlist library) and setlist
-  PDFs are created only when you explicitly choose to export them, and are
-  written to the location you pick. Where you store or share those files is
-  under your control; GigClick never uploads them anywhere.
-- **Permissions.** The app requests notification permission solely to show the
-  playback notification Android requires while the metronome runs in the
-  background. No other sensitive permissions are requested.
-
-## Children
-
-GigClick is not directed at children and collects no data from anyone,
-including children.
-
-## Changes
-
-If this policy ever changes (for example, if a future version adds an online
-feature), the updated policy will be posted at this address with a new
-effective date.
+- **Sample-accurate click.** Timing driven by the audio hardware clock, not
+  app timers. No drift, no stutter, from 20 to 300 BPM — and it keeps playing
+  with the screen off.
+- **Readable from the throne.** A huge beat counter fills the screen; beat
+  one flashes in your accent colour. Full-screen gig mode strips everything
+  back to the count, your setlist, and a big start/stop.
+- **Built for the gig.** Song library with tempo, time signature and
+  subdivision per song. Setlists you can build, drag-to-reorder, and step
+  through with big previous/next buttons — each song's tempo applies
+  instantly, with a next-song preview. Export any setlist as a printable PDF
+  for the rest of the band.
+- **Practice tools.** Subdivisions, per-beat accents and mutes, gap training
+  (the click drops out for N bars, then returns), tempo trainer, tap tempo.
+- **No nonsense.** No ads, no subscriptions, no account, no data collected —
+  see the [privacy policy](privacy/).
 
 ## Contact
 
-Questions about this policy: dmbkiwi@gmail.com
+Questions, feedback, or want to join the test?
+Email [dmbkiwi+gigclick@gmail.com](mailto:dmbkiwi+gigclick@gmail.com).
+
+---
+
+[Privacy policy](privacy/)
