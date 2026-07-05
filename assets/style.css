@@ -1,0 +1,197 @@
+/* GigClick site — amber on black, same identity as the app. */
+
+@font-face {
+  font-family: "Archivo";
+  src: url("fonts/archivo-var.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62.5% 125%;
+  font-display: swap;
+}
+
+:root {
+  --bg: #0d0d0d;
+  --panel: #151513;
+  --line: #29271f;
+  --text: #ededed;
+  --muted: #98917f;
+  --accent: #ffb74d;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Archivo", system-ui, -apple-system, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---- type roles ---- */
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-weight: 860;
+  font-stretch: 122%;
+  text-transform: uppercase;
+  font-size: clamp(2.4rem, 6.5vw, 4.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.25rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-weight: 800;
+  font-stretch: 116%;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+  margin: 2.75rem 0 0.75rem;
+}
+
+.lede {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 34ch;
+  margin: 0 0 2rem;
+}
+
+/* ---- landing hero ---- */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(200px, 340px) 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  padding: 5rem 0 4.5rem;
+}
+
+.hero svg { width: 100%; height: auto; display: block; }
+
+/* Signature: the click marks pulse at quarter = 120. */
+@keyframes click-pulse {
+  0%, 12% { opacity: 1; }
+  45%, 100% { opacity: 0.3; }
+}
+.tick { animation: click-pulse 0.5s infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .tick { animation: none; }
+}
+
+.status {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 1.75rem;
+}
+.status strong { color: var(--text); font-weight: 600; }
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #141005;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 6px;
+  transition: transform 0.15s ease, filter 0.2s ease;
+}
+.btn:hover { filter: brightness(1.08); text-decoration: none; }
+.btn:active { transform: translateY(1px) scale(0.99); }
+
+/* ---- feature rows (setlist style, not cards) ---- */
+
+.features { border-top: 1px solid var(--line); padding: 2.5rem 0 1rem; }
+
+.feature {
+  display: grid;
+  grid-template-columns: minmax(150px, 15rem) 1fr;
+  gap: 1.5rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.feature:last-child { border-bottom: 0; }
+.feature dt {
+  font-weight: 800;
+  font-stretch: 112%;
+  letter-spacing: 0.01em;
+}
+.feature dd {
+  margin: 0;
+  color: var(--muted);
+  max-width: 58ch;
+}
+.feature dd strong { color: var(--text); font-weight: 600; }
+
+/* ---- privacy article ---- */
+
+.article { max-width: 42rem; padding: 3.5rem 0 2rem; }
+.article h1 { font-size: clamp(2rem, 5vw, 3rem); }
+.article .date { color: var(--muted); font-size: 0.9rem; margin: 0 0 2rem; }
+.article ul { padding-left: 1.2rem; }
+.article li { margin: 0.6rem 0; color: var(--muted); }
+.article li strong, .article p strong { color: var(--text); }
+.article p { color: var(--muted); }
+.article p.callout {
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+  padding: 0.4rem 0 0.4rem 1rem;
+  font-size: 1.15rem;
+}
+
+.crumb {
+  display: inline-block;
+  padding: 2rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* ---- footer ---- */
+
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 4rem;
+  padding: 1.75rem 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.75rem;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 0 3rem;
+  }
+  .hero svg { max-width: 210px; }
+  .feature { grid-template-columns: 1fr; gap: 0.3rem; }
+}
